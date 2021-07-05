@@ -1,0 +1,8 @@
+$attrs:在export中使用created的非props组件,在创建高级的组件时非常有用
+v-bind='$attrs'传递父组件的所有非props父元素
+优先级：就近原则，父组件和爷爷组件都传递了，则选择父组件
+
+$listenters
+
+$refs：一个对象，持有注册过ref attribute的所有DOM元素和组件实例
+$el：vue实例使用的根DOM元素，想修改对应组件样式，需要使用$el

@@ -1,0 +1,13 @@
+setup函数是COMPOSITION  API的入口函数，变量和方法都是在该函数中定义的
+
+setup没有this,先于beforecreated和created执行
+
+ref函数包含了一个响应式的数据对象，将值传递给对象中的value属性，每次访问都要加.value
+
+reactive函数用于创建一个响应式的数据对象
+
+什么时候使用ref？
+基本数据类型(string,number,boolean)或单值数据对象（{count:3}）这样只有一个属性值的对象
+
+什么时候使用reactive?
+引用类型的值使用reactive(object.array)

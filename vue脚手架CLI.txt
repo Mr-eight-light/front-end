@@ -1,0 +1,45 @@
+vue CLI可以帮我们快速生成vue的起步项目
+安装: npm install -g @vue/cli
+检查是否安装成功：vue --version
+创建自己的项目：vue create  myproject
+
+node-modules:项目的依赖中心
+
+public：静态资源文件夹，和assets不同的是public不会被webpack进行打包，使用路径要使用绝对路径
+
+src：项目的核心区域，所有开发文件的核心区域内容，包括组件，静态资源等
+
+assets：静态资源文件夹，使用相对路径，会被webpack打包
+
+components：功能组件的存放位置，内部存放的是工用的组件
+
+views：公共文件，主要以各个独立页面为主
+
+app.vue：整个vue的根组件，所有vue组件都是从这个组件中扩展的，最后通过编译将内容渲染到.html中
+
+main.js：vue的入口文件，vue文件的初始化位置
+
+.gitignore：使git忽略某些文件
+
+babel.config.js：babel的配置文件
+
+package.json:配置项目的相关模块，项目相关配置信息
+
+cli为你教案的编译过程
+cli起步命令是npm run test
+
+vue-cli三个命令：
+serve:执行编译和热更新
+build:进行打包的命令
+lint:检测代码的合格性
+
+npm run serve：运行项目
+
+所有vue组件都是以.vue结尾
+
+data是个函数，返回的是一个对象，目的是让每个组件隔离
+
+使用组件三步走：
+创建vue文件
+在要渲染的地方引入组件
+注册该组件

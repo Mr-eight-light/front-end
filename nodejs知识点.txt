@@ -1,0 +1,23 @@
+util.inherits(Sub, Base); 
+sub会仅仅继承base的原型方法protopyte
+
+util.inspect(obj)
+util.inspect(obj,true)将对象转换为字符串
+
+util.isRegExp(object)
+如果给定的参数 "object" 是一个正则表达式返回true，否则返回false。
+
+util.isArray(object)
+如果给定的参数 "object" 是一个数组返回 true，否则返回 false。
+
+util.isDate(object)
+如果给定的参数 "object" 是一个日期返回true，否则返回false。
+
+读取文件内容的函数有异步的 fs.readFile() 和同步的 fs.readFileSync()。
+
+fs.ftruncate(fd, len, callback)截取文件len为截取的长度，截取完后会舍去其他部分
+
+fs.unlink(文件名, callback)
+
+webpack打包命令：
+webpack ./webstd.js -o ./bundle.js --mode development

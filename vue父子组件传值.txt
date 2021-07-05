@@ -1,0 +1,16 @@
+@add自定义事件是子组件通过$emit传出来的自定义事件，父组件通过这个事件设置sunNum,然后修改自己的值，从而实现子组件修改父组件的值
+
+在vue中使用watch监听数据的变化
+
+只能监听属性不能监听对象
+
+如果要想页面初始化就能监听，需要使用HANDLER函数，用immediate进行试试监听（设置值为true）
+
+watch:{
+ 	obj:{
+  		handler(){
+			console.log('你妈死了')
+		},
+		immediate:true
+	}
+}
